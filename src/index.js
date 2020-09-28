@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+
+//Redux puro sem hooks
+// import App from "./ReduxPuroSemHooks/App";
+// import store from "./ReduxPuroSemHooks/store";
+
+//Redux puro com hooks
+// import App from "./ReduxPuroComHooks/App";
+// import store from "./ReduxPuroComHooks/store";
+
+//Redux saga com hooks
+// import App from "./ReduxSagaComHooks/App";
+// import store from "./ReduxSagaComHooks/store";
+
+//Reux saga com Sauce e Hooks
+import App from "./ReduxSagaSauceComHooks/App";
+import store from "./ReduxSagaSauceComHooks/store";
+
+import { Provider } from "react-redux";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>,
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
