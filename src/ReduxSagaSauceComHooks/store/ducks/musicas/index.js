@@ -1,7 +1,7 @@
 import { createActions, createReducer } from "reduxsauce";
 
 export const { Types, Creators } = createActions({
-  updateInput: ["text", "type"],
+  updateInput: ["text", "input"],
 });
 
 console.log(Types);
@@ -14,7 +14,7 @@ const initialState = {
 
 const updateInput = (state = initialState, action) => {
   console.log(action);
-  if (action.type === "name") {
+  if (action.input === "name") {
     return { ...state, name: action.text };
   }
   return { ...state, age: action.text };

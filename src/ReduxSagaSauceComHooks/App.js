@@ -9,11 +9,15 @@ function App() {
   const { updateInput } = MusicasActions;
 
   const handleChangeName = (name) => {
+    // dispatch({ type: "UPDATE_INPUT", payload: name, input: "name" });
     dispatch(updateInput(name, "name"));
+    // 'name'
+    // INPUT_NAME
   };
 
   const handleChangeAge = (age) => {
     dispatch(updateInput(age, "age"));
+    // dispatch({ type: "UPDATE_INPUT", payload: age, input: "age" });
   };
 
   return (
