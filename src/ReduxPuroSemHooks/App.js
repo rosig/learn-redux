@@ -28,6 +28,7 @@ function App({ names, addName, updateName, deleteName }) {
   return (
     <div className="app-container" style={{ padding: 30, textAlign: "center" }}>
       <h1>Redux</h1>
+      <h3>Use Redux-DevTools</h3>
       <div
         className="data-container"
         style={{

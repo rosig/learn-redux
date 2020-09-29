@@ -14,7 +14,7 @@ import "./index.css";
 // import App from "./ReduxSagaComHooks/App";
 // import store from "./ReduxSagaComHooks/store";
 
-//Reux saga com Sauce e Hooks
+//Redux saga com redux Sauce e Hooks
 import App from "./ReduxSagaSauceComHooks/App";
 import store from "./ReduxSagaSauceComHooks/store";
 
